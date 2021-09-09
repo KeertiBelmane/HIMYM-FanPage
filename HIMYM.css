@@ -1,0 +1,290 @@
+nav,
+header,
+footer{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+p{
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+button{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(248, 248, 34);
+    color: rgb(113, 0, 189);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    border-color: rgb(113, 0, 189);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*############## NAVIGATION ################*/
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: rgb(113, 0, 189);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    float:left;
+}
+
+nav ul.topNav li a{
+    text-decoration: none;
+    display: block;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    color: blanchedalmond;
+}
+
+nav ul.topNav li a:hover{
+    background-color: rgb(248, 248, 34);
+    color: rgb(113, 0, 189);
+    font-weight: bold;
+}
+
+ul.topNav li.dropDown{
+    display: none;
+}
+
+/*############# CUSTOMIZATIONS ################*/
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background: linear-gradient(rgb(113, 0, 189),rgb(248, 248, 34));
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.white{
+    font-size: 56px;
+    color: whitesmoke;
+    margin: 0;
+    line-height: 70px;
+}
+form h2{
+    color:whitesmoke;
+}
+
+input.inputBox{
+    font-size: 20px;
+    min-width: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: rgb(113, 0, 189);
+}
+
+.left_col{
+    margin-left: 5%;
+}
+
+.right_col{
+    margin-left: 5%;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 20px;
+    padding: 0 5px 10px 5px;
+    text-align: center;
+    border: 2px solid rgb(113, 0, 189);
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(255, 255, 0, 0.603);
+}
+.box iframe{
+    width: 90% ;
+    
+}
+
+.moreVid,
+.merch{
+    display: block;
+    margin: auto;
+}
+
+.col-4 h2,
+.col-6 h2{
+    color:blueviolet;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.left_col h2{
+    color: whitesmoke;
+}
+
+.charImg1{
+    width: 30%;
+}
+
+.charImg{
+    width: 20%;
+}
+.charImg,
+.charImg1{
+    box-shadow: 2px 2px 20px 2px rgba(113, 0, 189, 0.5),
+    2px 2px 17px 2px rgba(113, 0, 189, 0.5);
+}
+
+.col-2 h1{
+    font-size: 35px;
+    padding-left: 50px;
+    color: rgb(113, 0, 189);
+    font-weight: bolder;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.col-10{
+    text-align: center;
+}
+
+.products .col-4{
+    text-align: center;
+}
+
+#Characters{
+    background-color: rgb(248, 248, 34) ;
+}
+
+footer.foot{
+    background: rgb(113, 0, 189);
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer.foot h2{
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer.foot ul li{
+    list-style: none;
+    text-align: center;
+    line-height: 2;
+}
+
+footer.foot ul li a{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+/*############## MOBILE ################*/
+
+@media screen and (max-width:680px){
+    ul.topNav li:not(:nth-child(1)){
+        display: none;
+    }
+
+    ul.topNav li.dropDown{
+        display: block;
+        float: right;
+    }
+
+    ul.topNav.responsive li.dropDown{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
+    ul.topNav.responsive{
+        position: relative;
+    }
+    ul.topNav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topNav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+
+    .col-6,
+    .col-4,
+    .col-10,
+    .col-2{
+        width: 100%;
+        margin: 0;
+    }
+
+    .col-2 h1{
+        writing-mode: horizontal-tb;
+        text-align: center;
+        color: rgb(113, 0, 189);
+        padding-top: 0px;
+    }
+
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+
+    iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    div.right_col,
+    div.left_col{
+        margin:1%;
+    }
+
+    .charImg{
+        width: 30%;
+    }
+}
